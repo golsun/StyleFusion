@@ -1,5 +1,5 @@
 # StyleFusion
-StyleFusion is a generalized version of [SpaceFusion](https://github.com/golsun/SpaceFusion), which allows jointly learnining from a conversational dataset and other formats of text (e.g., non-parallel, non-conversational stylized text dataset). In out EMNLP 2019 paper, we demonstrated its use to generate response in style of **Sherlock Holmes** and **arXiv**.
+StyleFusion is a model jointly learnining from a conversational dataset and other formats of text (e.g., non-parallel, non-conversational stylized text dataset). In out EMNLP 2019 paper, we demonstrated its use to generate response in style of **Sherlock Holmes** and **arXiv**. StyleFusion is a generalized version of [SpaceFusion](https://github.com/golsun/SpaceFusion).
 
 ## Dataset
 In our paper, we trained the model using the following three datasets. 
@@ -8,8 +8,8 @@ In our paper, we trained the model using the following three datasets.
 * **arXiv**-style dataset is avaialble [here](https://github.com/golsun/StyleFusion/tree/master/data/arXiv)
 
 ## Usage
-* to train a model `python src/main.py`
-* to interact with a trained model `python src/main.py`
+* to train a model `python src/main.py train`
+* to interact with a trained model `python src/main.py cmd -restore=[path_to_model_file]`
 * to interact with the [provided style classifiers](https://github.com/golsun/StyleFusion/tree/master/classifier) `python src/classifier.py [fld]`. `[fld]` is the folder where the classifier model exists, e.g., `classifier/Reddit_vs_arXiv/neural`
 
 ## Citation
