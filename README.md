@@ -23,6 +23,6 @@ Please cite our EMNLP paper if this repo inspired your work :)
 }
 ```
 
-![](https://github.com/golsun/StyleFusion/blob/master/fig/intro_fig.PNG)
+![](https://github.com/golsun/StyleFusion/blob/master/fig/intro_fig.png)
 
 
