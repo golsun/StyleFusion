@@ -1,11 +1,11 @@
 # StyleFusion
-StyleFusion jointly learns from a conversational dataset and other formats of text (e.g., non-parallel, non-conversational stylized text dataset). In our EMNLP 2019 [paper](https://github.com/golsun/StyleFusion/blob/master/EMNLP%20paper.pdf), we demonstrated its use to generate response in style of **Sherlock Holmes** and **arXiv**. StyleFusion is a generalized version of [SpaceFusion](https://github.com/golsun/SpaceFusion).
+StyleFusion jointly learns from a conversational dataset and other formats of text (e.g., non-parallel, non-conversational stylized text dataset). In our EMNLP 2019 [paper](https://github.com/golsun/StyleFusion/blob/master/EMNLP%20paper.pdf), we demonstrated its use to generate response in style of **Sherlock Holmes** and **arXiv**. StyleFusion is a generalized version of our previous work [SpaceFusion](https://github.com/golsun/SpaceFusion).
 
 ## Dataset
 In our paper, we trained the model using the following three datasets. 
 * **Reddit**: the conversational dataset, can be generated using the [script](https://github.com/golsun/SpaceFusion/tree/master/data#multi-ref-reddit) hosted in our previous SpaceFusion work.
 * **Sherlock Holmes**-style dataset is avaialble [here](https://github.com/golsun/StyleFusion/tree/master/data/Holmes)
-* **arXiv**-style dataset is avaialble [here](https://github.com/golsun/StyleFusion/tree/master/data/arXiv)
+* **arXiv**-style dataset can be obtained following instructions [here](https://github.com/golsun/StyleFusion/tree/master/data/arXiv)
 
 ## Usage
 * to train a model `python src/main.py train`
