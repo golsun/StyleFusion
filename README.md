@@ -1,5 +1,5 @@
 # StyleFusion
-StyleFusion is a model jointly learnining from a conversational dataset and other formats of text (e.g., non-parallel, non-conversational stylized text dataset). In out EMNLP 2019 paper, we demonstrated its use to generate response in style of **Sherlock Holmes** and **arXiv**. StyleFusion is a generalized version of [SpaceFusion](https://github.com/golsun/SpaceFusion).
+StyleFusion jointly learns from a conversational dataset and other formats of text (e.g., non-parallel, non-conversational stylized text dataset). In our EMNLP 2019 [paper](https://github.com/golsun/StyleFusion/blob/master/EMNLP%20paper.pdf), we demonstrated its use to generate response in style of **Sherlock Holmes** and **arXiv**. StyleFusion is a generalized version of [SpaceFusion](https://github.com/golsun/SpaceFusion).
 
 ## Dataset
 In our paper, we trained the model using the following three datasets. 
