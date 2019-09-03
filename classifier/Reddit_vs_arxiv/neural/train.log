@@ -1,0 +1,812 @@
+
+***** Epoch 1/1, trained 0.0000M *****
+
+start:	2019-04-19 16:41:52
+spent:    8 sec
+train:    0.6876
+vali:     0.6743
+vali_acc: 0.6150
+
+***** Epoch 1/1, trained 0.0128M *****
+
+start:	2019-04-19 16:42:02
+spent:    5 sec
+train:    0.5827
+vali:     0.3854
+vali_acc: 0.9180
+
+***** Epoch 1/1, trained 0.0256M *****
+
+start:	2019-04-19 16:42:08
+spent:    5 sec
+train:    0.2182
+vali:     0.1507
+vali_acc: 0.9540
+
+***** Epoch 1/1, trained 0.0384M *****
+
+start:	2019-04-19 16:42:13
+spent:    5 sec
+train:    0.1291
+vali:     0.1179
+vali_acc: 0.9650
+
+***** Epoch 1/1, trained 0.0512M *****
+
+start:	2019-04-19 16:42:19
+spent:    4 sec
+train:    0.1128
+vali:     0.0960
+vali_acc: 0.9710
+
+***** Epoch 1/1, trained 0.0640M *****
+
+start:	2019-04-19 16:42:25
+spent:    4 sec
+train:    0.0952
+vali:     0.0815
+vali_acc: 0.9750
+
+***** Epoch 1/1, trained 0.0768M *****
+
+start:	2019-04-19 16:42:30
+spent:    4 sec
+train:    0.0815
+vali:     0.0703
+vali_acc: 0.9820
+
+***** Epoch 1/1, trained 0.0896M *****
+
+start:	2019-04-19 16:42:36
+spent:    4 sec
+train:    0.0746
+vali:     0.0650
+vali_acc: 0.9800
+
+***** Epoch 1/1, trained 0.1024M *****
+
+start:	2019-04-19 16:42:41
+spent:    4 sec
+train:    0.0703
+vali:     0.0595
+vali_acc: 0.9840
+
+***** Epoch 1/1, trained 0.1152M *****
+
+start:	2019-04-19 16:42:47
+spent:    4 sec
+train:    0.0688
+vali:     0.0556
+vali_acc: 0.9850
+
+***** Epoch 1/1, trained 0.1280M *****
+
+start:	2019-04-19 16:42:52
+spent:    4 sec
+train:    0.0599
+vali:     0.0532
+vali_acc: 0.9860
+
+***** Epoch 1/1, trained 0.1408M *****
+
+start:	2019-04-19 16:42:58
+spent:    4 sec
+train:    0.0594
+vali:     0.0513
+vali_acc: 0.9850
+
+***** Epoch 1/1, trained 0.1536M *****
+
+start:	2019-04-19 16:43:03
+spent:    5 sec
+train:    0.0556
+vali:     0.0484
+vali_acc: 0.9860
+
+***** Epoch 1/1, trained 0.1664M *****
+
+start:	2019-04-19 16:43:09
+spent:    5 sec
+train:    0.0537
+vali:     0.0474
+vali_acc: 0.9870
+
+***** Epoch 1/1, trained 0.1792M *****
+
+start:	2019-04-19 16:43:15
+spent:    5 sec
+train:    0.0516
+vali:     0.0482
+vali_acc: 0.9880
+
+***** Epoch 1/1, trained 0.1920M *****
+
+start:	2019-04-19 16:43:22
+spent:    5 sec
+train:    0.0511
+vali:     0.0436
+vali_acc: 0.9890
+
+***** Epoch 1/1, trained 0.2048M *****
+
+start:	2019-04-19 16:43:28
+spent:    5 sec
+train:    0.0490
+vali:     0.0422
+vali_acc: 0.9890
+
+***** Epoch 1/1, trained 0.2176M *****
+
+start:	2019-04-19 16:43:34
+spent:    11 sec
+train:    0.0446
+vali:     0.0411
+vali_acc: 0.9910
+
+***** Epoch 1/1, trained 0.2304M *****
+
+start:	2019-04-19 16:43:46
+spent:    5 sec
+train:    0.0453
+vali:     0.0405
+vali_acc: 0.9920
+
+***** Epoch 1/1, trained 0.2432M *****
+
+start:	2019-04-19 16:43:52
+spent:    5 sec
+train:    0.0467
+vali:     0.0397
+vali_acc: 0.9920
+
+***** Epoch 1/1, trained 0.2560M *****
+
+start:	2019-04-19 16:43:58
+spent:    5 sec
+train:    0.0429
+vali:     0.0382
+vali_acc: 0.9920
+
+***** Epoch 1/1, trained 0.2688M *****
+
+start:	2019-04-19 16:44:04
+spent:    5 sec
+train:    0.0478
+vali:     0.0377
+vali_acc: 0.9920
+
+***** Epoch 1/1, trained 0.2816M *****
+
+start:	2019-04-19 16:44:10
+spent:    5 sec
+train:    0.0463
+vali:     0.0358
+vali_acc: 0.9920
+
+***** Epoch 1/1, trained 0.2944M *****
+
+start:	2019-04-19 16:44:16
+spent:    5 sec
+train:    0.0422
+vali:     0.0367
+vali_acc: 0.9900
+
+***** Epoch 1/1, trained 0.3072M *****
+
+start:	2019-04-19 16:44:22
+spent:    5 sec
+train:    0.0360
+vali:     0.0368
+vali_acc: 0.9910
+
+***** Epoch 1/1, trained 0.3200M *****
+
+start:	2019-04-19 16:44:28
+spent:    5 sec
+train:    0.0410
+vali:     0.0351
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.3328M *****
+
+start:	2019-04-19 16:44:34
+spent:    5 sec
+train:    0.0407
+vali:     0.0368
+vali_acc: 0.9910
+
+***** Epoch 1/1, trained 0.3456M *****
+
+start:	2019-04-19 16:44:39
+spent:    5 sec
+train:    0.0368
+vali:     0.0341
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.3584M *****
+
+start:	2019-04-19 16:44:45
+spent:    5 sec
+train:    0.0395
+vali:     0.0339
+vali_acc: 0.9920
+
+***** Epoch 1/1, trained 0.3712M *****
+
+start:	2019-04-19 16:44:51
+spent:    4 sec
+train:    0.0376
+vali:     0.0327
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.3840M *****
+
+start:	2019-04-19 16:44:57
+spent:    4 sec
+train:    0.0405
+vali:     0.0326
+vali_acc: 0.9920
+
+***** Epoch 1/1, trained 0.3968M *****
+
+start:	2019-04-19 16:45:02
+spent:    5 sec
+train:    0.0389
+vali:     0.0336
+vali_acc: 0.9910
+
+***** Epoch 1/1, trained 0.4096M *****
+
+start:	2019-04-19 16:45:08
+spent:    4 sec
+train:    0.0366
+vali:     0.0322
+vali_acc: 0.9910
+
+***** Epoch 1/1, trained 0.4224M *****
+
+start:	2019-04-19 16:45:13
+spent:    4 sec
+train:    0.0396
+vali:     0.0337
+vali_acc: 0.9920
+
+***** Epoch 1/1, trained 0.4352M *****
+
+start:	2019-04-19 16:45:19
+spent:    5 sec
+train:    0.0397
+vali:     0.0304
+vali_acc: 0.9920
+
+***** Epoch 1/1, trained 0.4480M *****
+
+start:	2019-04-19 16:45:25
+spent:    4 sec
+train:    0.0369
+vali:     0.0297
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.4608M *****
+
+start:	2019-04-19 16:45:30
+spent:    5 sec
+train:    0.0355
+vali:     0.0301
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.4736M *****
+
+start:	2019-04-19 16:45:36
+spent:    5 sec
+train:    0.0360
+vali:     0.0284
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.4864M *****
+
+start:	2019-04-19 16:45:42
+spent:    5 sec
+train:    0.0344
+vali:     0.0288
+vali_acc: 0.9910
+
+***** Epoch 1/1, trained 0.4992M *****
+
+start:	2019-04-19 16:45:48
+spent:    5 sec
+train:    0.0336
+vali:     0.0277
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.5120M *****
+
+start:	2019-04-19 16:45:53
+spent:    5 sec
+train:    0.0342
+vali:     0.0266
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.5248M *****
+
+start:	2019-04-19 16:45:59
+spent:    5 sec
+train:    0.0326
+vali:     0.0267
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 0.5376M *****
+
+start:	2019-04-19 16:46:05
+spent:    5 sec
+train:    0.0299
+vali:     0.0263
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 0.5504M *****
+
+start:	2019-04-19 16:46:11
+spent:    4 sec
+train:    0.0323
+vali:     0.0265
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.5632M *****
+
+start:	2019-04-19 16:46:17
+spent:    5 sec
+train:    0.0326
+vali:     0.0255
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.5760M *****
+
+start:	2019-04-19 16:46:23
+spent:    5 sec
+train:    0.0352
+vali:     0.0248
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 0.5888M *****
+
+start:	2019-04-19 16:46:29
+spent:    4 sec
+train:    0.0331
+vali:     0.0275
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.6016M *****
+
+start:	2019-04-19 16:46:35
+spent:    4 sec
+train:    0.0326
+vali:     0.0266
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.6144M *****
+
+start:	2019-04-19 16:46:40
+spent:    5 sec
+train:    0.0289
+vali:     0.0251
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.6272M *****
+
+start:	2019-04-19 16:46:46
+spent:    4 sec
+train:    0.0308
+vali:     0.0236
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 0.6400M *****
+
+start:	2019-04-19 16:46:52
+spent:    4 sec
+train:    0.0354
+vali:     0.0246
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.6528M *****
+
+start:	2019-04-19 16:46:57
+spent:    5 sec
+train:    0.0339
+vali:     0.0248
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.6656M *****
+
+start:	2019-04-19 16:47:03
+spent:    5 sec
+train:    0.0288
+vali:     0.0255
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.6784M *****
+
+start:	2019-04-19 16:47:09
+spent:    4 sec
+train:    0.0295
+vali:     0.0243
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.6912M *****
+
+start:	2019-04-19 16:47:15
+spent:    4 sec
+train:    0.0292
+vali:     0.0243
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.7040M *****
+
+start:	2019-04-19 16:47:20
+spent:    5 sec
+train:    0.0272
+vali:     0.0243
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.7168M *****
+
+start:	2019-04-19 16:47:26
+spent:    5 sec
+train:    0.0368
+vali:     0.0236
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 0.7296M *****
+
+start:	2019-04-19 16:47:31
+spent:    4 sec
+train:    0.0292
+vali:     0.0245
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 0.7424M *****
+
+start:	2019-04-19 16:47:37
+spent:    5 sec
+train:    0.0284
+vali:     0.0257
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.7552M *****
+
+start:	2019-04-19 16:47:43
+spent:    5 sec
+train:    0.0298
+vali:     0.0235
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.7680M *****
+
+start:	2019-04-19 16:47:48
+spent:    5 sec
+train:    0.0284
+vali:     0.0250
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.7808M *****
+
+start:	2019-04-19 16:47:54
+spent:    5 sec
+train:    0.0277
+vali:     0.0238
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.7936M *****
+
+start:	2019-04-19 16:48:00
+spent:    5 sec
+train:    0.0269
+vali:     0.0247
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.8064M *****
+
+start:	2019-04-19 16:48:06
+spent:    5 sec
+train:    0.0300
+vali:     0.0235
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 0.8192M *****
+
+start:	2019-04-19 16:48:12
+spent:    5 sec
+train:    0.0279
+vali:     0.0249
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.8320M *****
+
+start:	2019-04-19 16:48:17
+spent:    4 sec
+train:    0.0297
+vali:     0.0264
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.8448M *****
+
+start:	2019-04-19 16:48:23
+spent:    4 sec
+train:    0.0336
+vali:     0.0248
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.8576M *****
+
+start:	2019-04-19 16:48:29
+spent:    5 sec
+train:    0.0271
+vali:     0.0245
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.8704M *****
+
+start:	2019-04-19 16:48:34
+spent:    5 sec
+train:    0.0288
+vali:     0.0234
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.8832M *****
+
+start:	2019-04-19 16:48:40
+spent:    5 sec
+train:    0.0283
+vali:     0.0249
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.8960M *****
+
+start:	2019-04-19 16:48:46
+spent:    5 sec
+train:    0.0276
+vali:     0.0231
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.9088M *****
+
+start:	2019-04-19 16:48:51
+spent:    4 sec
+train:    0.0289
+vali:     0.0224
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.9216M *****
+
+start:	2019-04-19 16:48:57
+spent:    4 sec
+train:    0.0309
+vali:     0.0218
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.9344M *****
+
+start:	2019-04-19 16:49:03
+spent:    4 sec
+train:    0.0246
+vali:     0.0218
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 0.9472M *****
+
+start:	2019-04-19 16:49:08
+spent:    4 sec
+train:    0.0262
+vali:     0.0217
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.9600M *****
+
+start:	2019-04-19 16:49:14
+spent:    4 sec
+train:    0.0274
+vali:     0.0222
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.9728M *****
+
+start:	2019-04-19 16:49:19
+spent:    5 sec
+train:    0.0291
+vali:     0.0225
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.9856M *****
+
+start:	2019-04-19 16:49:25
+spent:    5 sec
+train:    0.0290
+vali:     0.0225
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 0.9984M *****
+
+start:	2019-04-19 16:49:31
+spent:    5 sec
+train:    0.0272
+vali:     0.0223
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 1.0112M *****
+
+start:	2019-04-19 16:49:37
+spent:    4 sec
+train:    0.0297
+vali:     0.0236
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 1.0240M *****
+
+start:	2019-04-19 16:49:42
+spent:    4 sec
+train:    0.0255
+vali:     0.0234
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 1.0368M *****
+
+start:	2019-04-19 16:49:48
+spent:    4 sec
+train:    0.0244
+vali:     0.0216
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 1.0496M *****
+
+start:	2019-04-19 16:49:53
+spent:    4 sec
+train:    0.0266
+vali:     0.0215
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 1.0624M *****
+
+start:	2019-04-19 16:49:59
+spent:    4 sec
+train:    0.0302
+vali:     0.0216
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 1.0752M *****
+
+start:	2019-04-19 16:50:05
+spent:    4 sec
+train:    0.0257
+vali:     0.0217
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 1.0880M *****
+
+start:	2019-04-19 16:50:10
+spent:    4 sec
+train:    0.0310
+vali:     0.0219
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 1.1008M *****
+
+start:	2019-04-19 16:50:16
+spent:    4 sec
+train:    0.0302
+vali:     0.0230
+vali_acc: 0.9930
+
+***** Epoch 1/1, trained 1.1136M *****
+
+start:	2019-04-19 16:50:21
+spent:    4 sec
+train:    0.0277
+vali:     0.0209
+vali_acc: 0.9960
+
+***** Epoch 1/1, trained 1.1264M *****
+
+start:	2019-04-19 16:50:27
+spent:    4 sec
+train:    0.0247
+vali:     0.0203
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 1.1392M *****
+
+start:	2019-04-19 16:50:33
+spent:    4 sec
+train:    0.0270
+vali:     0.0200
+vali_acc: 0.9960
+
+***** Epoch 1/1, trained 1.1520M *****
+
+start:	2019-04-19 16:50:38
+spent:    5 sec
+train:    0.0279
+vali:     0.0205
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 1.1648M *****
+
+start:	2019-04-19 16:50:44
+spent:    4 sec
+train:    0.0253
+vali:     0.0213
+vali_acc: 0.9940
+
+***** Epoch 1/1, trained 1.1776M *****
+
+start:	2019-04-19 16:50:49
+spent:    4 sec
+train:    0.0306
+vali:     0.0196
+vali_acc: 0.9990
+
+***** Epoch 1/1, trained 1.1904M *****
+
+start:	2019-04-19 16:50:55
+spent:    5 sec
+train:    0.0288
+vali:     0.0198
+vali_acc: 0.9960
+
+***** Epoch 1/1, trained 1.2032M *****
+
+start:	2019-04-19 16:51:01
+spent:    5 sec
+train:    0.0268
+vali:     0.0203
+vali_acc: 0.9960
+
+***** Epoch 1/1, trained 1.2160M *****
+
+start:	2019-04-19 16:51:06
+spent:    4 sec
+train:    0.0247
+vali:     0.0193
+vali_acc: 0.9990
+
+***** Epoch 1/1, trained 1.2288M *****
+
+start:	2019-04-19 16:51:12
+spent:    5 sec
+train:    0.0279
+vali:     0.0196
+vali_acc: 0.9990
+
+***** Epoch 1/1, trained 1.2416M *****
+
+start:	2019-04-19 16:51:18
+spent:    5 sec
+train:    0.0295
+vali:     0.0199
+vali_acc: 0.9950
+
+***** Epoch 1/1, trained 1.2544M *****
+
+start:	2019-04-19 16:51:24
+spent:    5 sec
+train:    0.0266
+vali:     0.0198
+vali_acc: 0.9970
+
+***** Epoch 1/1, trained 1.2672M *****
+
+start:	2019-04-19 16:51:30
+spent:    5 sec
+train:    0.0227
+vali:     0.0191
+vali_acc: 0.9980
+
+***** Epoch 1/1, trained 1.2800M *****
+
+start:	2019-04-19 16:51:36
+spent:    6 sec
+train:    0.0265
+vali:     0.0190
+vali_acc: 0.9960
+
+***** Epoch 1/1, trained 1.2928M *****
+
+start:	2019-04-19 16:51:44

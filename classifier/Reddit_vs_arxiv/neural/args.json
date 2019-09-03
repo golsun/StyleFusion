@@ -1,0 +1,1 @@
+{"mode": "train", "encoder_depth": 2, "rnn_units": 32, "mlp_depth": 2, "mlp_units": 32, "lr": 0.0001, "dropout": 0.0, "tgt_only": true, "data_name": "base10m_vs_arxiv1m", "score_path": "", "restore": "", "n_max": -1, "include_punc": false}

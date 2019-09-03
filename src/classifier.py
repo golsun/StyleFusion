@@ -205,22 +205,17 @@ def is_word(token):
 
 
 
-def load_classifier(name, args=None):
-	fld = 'restore/classifier/'+name
-	if name.endswith('ngram'):
+def load_classifier(fld, args=None):
+	if fld.endswith('ngram'):
 		return ClassifierNgramEnsemble(fld)
-	elif name.endswith('neural'):
+	elif fld.endswith('neural'):
 		return ClassifierNeural(fld)
-	elif name.endswith('lm'):
-		return ClassifierLM(fld, args)
 	else:
 		raise ValueError
 	
 
-
-
-def clf_interact(name):
-	clf = load_classifier(name)
+def clf_interact(fld):
+	clf = load_classifier(fld)
 	while True:
 		print('\n---- please input ----')
 		txt = input()
@@ -229,17 +224,6 @@ def clf_interact(name):
 		score = clf.predict([txt])[0]
 		print('%.4f'%score)
 
-
-def clf_interact_lm():
-	args = parser.parse_args()
-	clf = load_classifier(args.restore, args)
-	while True:
-		print('\n---- please input ----')
-		txt = input()
-		if txt == '':
-			break
-		score = clf.predict([txt])[0]
-		print('%.4f'%score)
 
 
 def txt2ww(txt, include_punc):
@@ -357,4 +341,8 @@ class Classifier1gramCount:
         plt.title('corr = %.4f'%np.corrcoef(human, pred)[0][1])
         plt.savefig(self.fld + '/test_corr_kw%i.png'%kw)
 
-                
+
+if __name__ == '__main__':
+    # e.g. `python src/classifier.py classifier/Reddit_vs_arXiv/neural'
+    fld = sys.argv[1]  # e.g.
+    clf_interact(fld)
