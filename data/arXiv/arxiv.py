@@ -3,6 +3,9 @@ AUTHOR:
 Sean Xiang Gao (xiag@microsoft.com) at Microsoft Research
 """
 
+EQN_token = '_eqn_'
+CITE_token = '_cite_'
+IX_token = '_ix_'
 
 def arxiv_del_bib(path):
 	lines = []
