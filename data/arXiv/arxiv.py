@@ -1,13 +1,16 @@
 """
 AUTHOR: 
-Sean Xiang Gao (xiag@microsoft.com) at Microsoft Research
+Xiang Gao (xiag@microsoft.com) at Microsoft Research
 """
+
+import re, os, subprocess
+from nltk.tokenize import TweetTokenizer
 
 EQN_token = '_eqn_'
 CITE_token = '_cite_'
 IX_token = '_ix_'
+MAX_UTT_LEN = 30	# maximum length of utterance allowed. if longer, ignore
 
-import re
 
 def norm_sentence(txt):
 	txt = txt.lower()
@@ -185,7 +188,7 @@ def arxiv_utts(path):
 			if len(alpha) < 5:
 				continue
 			utt = norm_sentence(utt)
-			if len(utt.split()) > 30:
+			if len(utt.split()) > MAX_UTT_LEN:
 				continue
 			utts.append(utt)
 	with open(path+'.utt', 'w', encoding='utf-8') as f:
@@ -230,10 +233,10 @@ def arxiv_filter(path):
 if __name__ == '__main__':
 	years = range(1998, 2002+1)
 	for year in years:
-		fld = 'hep-th-%i.tar/%i/'%(year, year)
+		fld = 'hep-th-%i/%i/'%(year, year)
 		arxiv_pandoc(fld)
 		arxiv_paragraph_all(fld)
 		arxiv_utts_all(fld)
 	for year in years:
 		print(year)
-		arxiv_filter('hep-th-%i.tar/all.utt'%(year))
+		arxiv_filter('hep-th-%i/all.utt'%(year))
