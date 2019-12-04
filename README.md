@@ -17,8 +17,8 @@ In our paper, we trained the model using the following three datasets.
 * to train a model `python src/main.py train`
 * to interact with a trained model `python src/main.py cmd --restore=[path_to_model_file]`
 * using the [provided style classifiers](https://github.com/golsun/StyleFusion/tree/master/classifier) 
-   * interact demo: `python src/classifier.py [fld_clf]`. `[fld_clf]` is the folder where the classifier model exists, e.g., `classifier/Reddit_vs_arXiv/neural`
-   * evaluate a file: `python src/classifier.py [fld_clf] [path_to_be_evaluated]`.
+   * interactive demo: `python src/classifier.py [fld_clf]`, where `[fld_clf]` is the folder where the classifier model exists, e.g., `classifier/Reddit_vs_arXiv/neural`
+   * evaluate a tsv file: `python src/classifier.py [fld_clf] [path_to_be_evaluated]`.
 
 ## Citation
 Please cite our EMNLP paper if this repo is useful to your work :)

@@ -59,6 +59,7 @@ parser.add_argument('--restore', type=str, default='')
 parser.add_argument('--noisy_vocab', type=int, default=-1)
 parser.add_argument('--reld', action='store_true')
 parser.add_argument('--ablation', '-abl', action='store_true')
+parser.add_argument('--path_test', type=str)
 
 if hostname == 'MININT-3LHNLKS':
 	parser.add_argument('--cpu_only', '-c', action='store_true')

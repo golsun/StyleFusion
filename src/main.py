@@ -19,7 +19,7 @@ def run_master(mode, args):
 			if len(a) > 0:
 				bb.append(a)
 		fld = '/'.join(bb[:-1])
-		if mode in ['vali','vis','test']:
+		if mode in ['vali','vis']:
 			vocab_only = False
 			fld_data, _, _ = get_model_fld(args)
 			path_bias_vocab = fld_data + '/vocab_bias.txt'
@@ -160,6 +160,20 @@ def run_master(mode, args):
 
 
 		elif 'test' == mode:
+			infer_args = parse_infer_args()
+			path_out = args.path_test+'.hyp'
+			open(path_out, 'w', encoding='utf-8')
+			for line in open(args.path_test, encoding='utf-8'):
+				line = line.strip('\n')
+				inp = line.split('\t')[0]
+				results = infer_rank(inp, master, infer_args, base_ranker=base_ranker)
+				lines = []
+				for _, hyp, _ in results[:min(10, len(results))]:
+					lines.append(line + '\t' + hyp.replace(' _EOS_','').strip())
+				with open(path_out, 'a', encoding='utf-8') as f:
+					f.write('\n'.join(lines) + '\n')
+
+			"""
 			path_in = DATA_PATH + '/test/' + args.test_fname
 			if not PHILLY:
 				fld_out = master.fld + '/eval2/'
@@ -169,7 +183,7 @@ def run_master(mode, args):
 			npz_name = args.restore.split('/')[-1].replace('.npz','')
 			path_out = fld_out + '/' + args.test_fname + '_' + npz_name
 			test_master(master, path_in, path_out, max_n_src=args.test_n_max, base_ranker=base_ranker, baseline=args.baseline, r_rand=args.r_rand)
-
+			"""
 	else:
 		raise ValueError
 
