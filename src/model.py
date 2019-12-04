@@ -82,7 +82,7 @@ class ModelBase:
 	def load_weights(self, path):
 		self.prev_wt_fuse = None
 		print('loading weights from %s'%path)
-		npz = np.load(path, encoding='latin1')
+		npz = np.load(path, encoding='latin1', allow_pickle=True)
 		print(npz.files)
 		weights = npz['layers'].item()
 		for k in weights:

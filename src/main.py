@@ -38,6 +38,7 @@ def run_master(mode, args):
 	else:
 		allowed_words = None
 
+
 	model_class = args.model_class.lower()
 	if model_class.startswith('fuse'):
 		Master = StyleFusion
@@ -51,6 +52,7 @@ def run_master(mode, args):
 		pass
 	else:
 		raise ValueError
+
 	
 	if model_class == 's2s+lm':
 		master = Seq2SeqLM(args, allowed_words)
@@ -70,7 +72,12 @@ def run_master(mode, args):
 	if mode in ['vis', 'load']:
 		return master
 
-	CLF_NAMES = []
+	if args.clf_name.lower() == 'holmes':
+		CLF_NAMES = ['classifier/Reddit_vs_Holmes/neural', 'classifier/Reddit_vs_Holmes/ngram']
+	elif args.clf_name.lower() == 'arxiv':
+		CLF_NAMES = ['classifier/Reddit_vs_arxiv/neural', 'classifier/Reddit_vs_arxiv/ngram']
+	else:
+		CLF_NAMES = [args.clf_name]
 	print('loading classifiers '+str(CLF_NAMES))
 	master.clf_names = CLF_NAMES
 	master.classifiers = []
@@ -120,6 +127,7 @@ def run_master(mode, args):
 			print(s_surrogate)
 			return
 
+		"""
 		if model_class != 's2s+lm':
 			with tf.variable_scope('base_rankder', reuse=tf.AUTO_REUSE):
 				fld_base_ranker = 'restore/%s/%s/pretrained/'%(args.model_class.replace('fuse1','fuse'), args.data_name)
@@ -131,10 +139,11 @@ def run_master(mode, args):
 				base_ranker.load_weights(path)
 				print('*'*10 + ' base_ranker loaded from: '+path)
 		else:
-			base_ranker = None
+			"""
+		base_ranker = None
 		
 		def print_results(results):
-			ss = ['total', 'logP', 'rep', 'len', 's2s', 'clf_h', 'clf_v']
+			ss = ['total', 'logP', 'logP_c', 'logP_b', 'rep', 'len',] + ['clf%i'%i for i in range(len(CLF_NAMES))]
 			print('; '.join([' '*(6-len(s))+s for s in ss]))
 			for score, resp, terms in results:
 				print('%6.3f; '%score + '; '.join(['%6.3f'%x for x in terms]) + '; ' + resp)
