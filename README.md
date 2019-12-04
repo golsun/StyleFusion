@@ -5,6 +5,7 @@ Designed to build a **stylized** dialogue response generator, StyleFusion jointl
 
 More documents:
 * our EMNLP'19 [paper](https://arxiv.org/abs/1909.05361).
+* our EMNLP'19 [poster](https://github.com/golsun/StyleFusion/blob/master/EMNLP%20poster.pdf).
 * A nice [introduction](https://mp.weixin.qq.com/s/rtAra15Qqnz9bLadSUSAlg) of our work (not official, by Shannon.AI, in Chinese)
 
 ## Dataset
