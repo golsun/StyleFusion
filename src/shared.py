@@ -33,6 +33,7 @@ print('data_path: %s'%DATA_PATH)
 print('out_path:  %s'%OUT_PATH)
 print('@'*20)
 
+PHILLY = False
 BATCH_SIZE = 128#256
 
 parser = argparse.ArgumentParser()
@@ -51,7 +52,8 @@ parser.add_argument('--max_ctxt_len', type=int, default=90)
 parser.add_argument('--max_resp_len', type=int, default=30)	
 parser.add_argument('--fld_suffix', type=str, default='')	
 parser.add_argument('--conv_mix_ratio', type=float, default=0.0)	
-parser.add_argument('--nonc_mix_ratio', type=float, default=0.0)
+parser.add_argument('--nonc_mix_ratio', type=float, default=1.0)
+parser.add_argument('--clf_name', type=str, default='holmes')
 parser.add_argument('--model_class', type=str, default='fuse')	
 parser.add_argument('--restore', type=str, default='')
 parser.add_argument('--noisy_vocab', type=int, default=-1)

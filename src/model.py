@@ -67,6 +67,7 @@ class ModelBase:
 
 
 	def train(self, batch_per_load=100):
+		self.vali()
 		while self.n_trained < self.max_n_trained:
 			s = '\n***** trained %.3f M'%(self.n_trained/1e6)
 			for tp in self.dataset.n_reset['train']:
@@ -153,7 +154,7 @@ class Seq2SeqBase(ModelBase):
 		self.prev_n_batch = 0
 		self.dn_batch_vali = 100
 
-		self.bias_conv = hasattr(self.dataset, 'files') and ('bias_conv' in self.dataset.files['train'])
+		self.bias_conv = False # hasattr(self.dataset, 'files') and ('bias_conv' in self.dataset.files['train'])
 		self.debug = args.debug
 		self.token_embed_dim = args.token_embed_dim
 		self.rnn_units = args.rnn_units
@@ -339,14 +340,15 @@ class Seq2SeqBase(ModelBase):
 			vali_size = BATCH_SIZE
 		else:
 			vali_size = 1000
-		self.vali_data = dict()
-
+		self.vali_data = _feed_vali((0, 1))
+		"""
 		self.vali_data['base'] = _feed_vali((0, 0))
 		self.vali_data['mix'] = _feed_vali(self.mix_ratio)
 		if self.bias_conv:
 			self.vali_data['bias'] = _feed_vali((1, 1))
 		else:
 			self.vali_data['bias'] = _feed_vali((0, 1))
+			"""
 		return self.vali_data
 
 	def vali(self):
@@ -357,14 +359,16 @@ class Seq2SeqBase(ModelBase):
 			ss.append(infer_comb(inp, self))
 		write_log(self.log_train, '\n'.join(ss))
 
+		"""
 		data = self.get_vali_data()
 		if self.name.startswith('fuse'):
 			r_rand = 0.1 * np.sqrt(self.rnn_units)
 		else:
 			r_rand = 0.
-		s_decoded = eval_decoded(self, data, self.classifiers, r_rand=r_rand)[0]
-		s_surrogate = eval_surrogate(self, data)[0]
-		write_log(self.log_train, '\n' + s_decoded + '\n\n' + s_surrogate + '\n')
+		#s_decoded = ''#eval_decoded(self, data, self.classifiers, r_rand=r_rand)[0]
+		#s_surrogate = eval_surrogate(self, data)[0]
+		#write_log(self.log_train, '\n' + s_decoded + '\n\n' + s_surrogate + '\n')
+		"""
 		self.prev_n_batch = self.n_batch
 
 		# save --------------------

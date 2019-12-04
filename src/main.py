@@ -10,7 +10,6 @@ AUTHOR: Xiang Gao (xiag@microsoft.com) at Microsoft Research
 """
 
 
-
 def run_master(mode, args):
 
 	if mode not in ['train','continue'] and args.restore != '':
@@ -71,17 +70,7 @@ def run_master(mode, args):
 	if mode in ['vis', 'load']:
 		return master
 
-	if args.clf_name.lower() == 'holmes' or (args.clf_name.lower() == '' and 'holmes' in args.data_name.lower()):
-		CLF_NAMES = [
-			#'holmes_vs_other', 'victoriana_vs_other',
-			'base10M_vs_Holmes38k/neural','base10M_vs_Holmes38k/ngram',
-			]
-	elif args.clf_name.lower() == 'arxiv' or (args.clf_name.lower() == '' and 'arxiv' in args.data_name.lower()): 
-		CLF_NAMES = [
-			'base10M_vs_arxiv1M/neural','base10M_vs_arxiv1M/ngram',
-		]
-	else:
-		CLF_NAMES = []
+	CLF_NAMES = []
 	print('loading classifiers '+str(CLF_NAMES))
 	master.clf_names = CLF_NAMES
 	master.classifiers = []

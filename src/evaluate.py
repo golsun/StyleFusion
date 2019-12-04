@@ -69,6 +69,7 @@ def calc_retrieval_rate(hyps, refs, sim_type='01'):
 
 def get_available(master, data):
 	n = data['base']['n_sample']
+	import pdb; pdb.set_trace()
 	available = [('base','conv'),('base','nonc')]
 	if data['bias']['n_sample'] > 0:
 		assert(n == data['bias']['n_sample'])
