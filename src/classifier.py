@@ -225,6 +225,20 @@ def clf_interact(fld):
 		print('%.4f'%score)
 
 
+def clf_eval(path):
+    # path is a tsv, last col is hyp
+    clf = load_classifier(fld)
+    sum_score = 0
+    n = 0
+    for line in open(path, encoding='utf-8'):
+        txt = line.strip('\n').split('\t')[-1].lower()
+        sum_score += clf.predict([txt])[0]
+        n += 1
+        if n % 100 == 0:
+            print('eval %i lines'%n)
+    print('finally %i samples'%n)
+    print('avg style score: %.4f'%(sum_score/n))
+
 
 def txt2ww(txt, include_punc):
     ww = [SOS_token]
@@ -343,6 +357,11 @@ class Classifier1gramCount:
 
 
 if __name__ == '__main__':
-    # e.g. `python src/classifier.py classifier/Reddit_vs_arXiv/neural'
-    fld = sys.argv[1]  # e.g.
-    clf_interact(fld)
+    # e.g. `python src/classifier.py classifier/Reddit_vs_arXiv/neural' for interaction
+    # e.g. `python src/classifier.py classifier/Reddit_vs_arXiv/neural path/to/hyp/file.tsv' for evaluating a file
+    fld_model = sys.argv[1]  # e.g.
+    if len(sys.argv) == 2:
+        clf_interact(fld_model)
+    elif len(sys.argv) == 3:
+        path_hyp = sys.argv[2]
+        clf_eval(fld_model, path_hyp)
