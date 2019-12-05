@@ -192,9 +192,7 @@ def rank_nbest(hyps, logP, logP_center, master, inp, infer_args=dict(), base_ran
 		hyps_no_ie.append((' '+hyp+' ').replace(' i . e . ,',' ').replace(' i . e. ',' ').strip())
 	hyps = hyps_no_ie[:]
 
-	wts_classifier = []
-	for clf_name in master.clf_names:
-		wts_classifier.append(infer_args.get(clf_name, 0))
+	wt_clf = infer_args.get('wt_clf', 0) / len(master.classifiers)
 	wt_rep = infer_args.get('wt_rep', 0)
 	wt_len = infer_args.get('wt_len', 0)
 	wt_center = infer_args.get('wt_center', 0)
@@ -224,7 +222,7 @@ def rank_nbest(hyps, logP, logP_center, master, inp, infer_args=dict(), base_ran
 		clf_score_ = []
 		for k in range(len(master.classifiers)):
 			s = clf_score[k][i]
-			score += wts_classifier[k] * s
+			score += wt_clf * s
 			clf_score_.append(s)
 		pq.put((-score, hyp, (logP[i], logP_center[i], logP_base[i], rep, l) + tuple(clf_score_)))
 

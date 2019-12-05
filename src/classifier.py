@@ -225,9 +225,9 @@ def clf_interact(fld):
 		print('%.4f'%score)
 
 
-def clf_eval(path):
+def clf_eval(clf_fld, path):
     # path is a tsv, last col is hyp
-    clf = load_classifier(fld)
+    clf = load_classifier(clf_fld)
     sum_score = 0
     n = 0
     for line in open(path, encoding='utf-8'):
