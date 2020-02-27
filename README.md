@@ -13,7 +13,8 @@ In our paper, we trained the model using the following three datasets.
 * **Sherlock Holmes**, one of style dataset (`bias_nonc`), avaialble [here](https://github.com/golsun/StyleFusion/tree/master/data/Holmes)
 * **arXiv**, another style corpus (`bias_nonc`), can be obtained following instructions [here](https://github.com/golsun/StyleFusion/tree/master/data/arXiv)
 * A [toy dataset](https://github.com/golsun/StyleFusion/tree/master/data/toy) is provied as an example following the format described above.
-see [here](https://github.com/golsun/StyleFusion/blob/master/data/README.md) for more details and instructions.
+
+See [here](https://github.com/golsun/StyleFusion/blob/master/data/README.md) for more details and instructions.
 
 ## Usage
 * to train a model `python src/main.py train`
