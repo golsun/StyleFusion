@@ -9,9 +9,9 @@ More documents:
 
 ## Dataset
 In our paper, we trained the model using the following three datasets. 
-* **Reddit**: the conversational dataset, can be generated using the [script](https://github.com/golsun/SpaceFusion/tree/master/data#multi-ref-reddit) hosted in our previous SpaceFusion work.
-* **Sherlock Holmes**-style dataset is avaialble [here](https://github.com/golsun/StyleFusion/tree/master/data/Holmes)
-* **arXiv**-style dataset can be obtained following instructions [here](https://github.com/golsun/StyleFusion/tree/master/data/arXiv)
+* **Reddit**: the conversational dataset (`base_conv`), can be generated using the [script](https://github.com/golsun/SpaceFusion/tree/master/data#multi-ref-reddit) hosted in our previous SpaceFusion work.
+* **Sherlock Holmes**, one of style dataset (`bias_nonc`), avaialble [here](https://github.com/golsun/StyleFusion/tree/master/data/Holmes)
+* **arXiv**, another style corpus (`bias_nonc`), can be obtained following instructions [here](https://github.com/golsun/StyleFusion/tree/master/data/arXiv)
 
 ## Usage
 * to train a model `python src/main.py train`
