@@ -1,4 +1,5 @@
 
 *.pyc
 models/
+out/
 temp.py

@@ -37,7 +37,7 @@ PHILLY = False
 BATCH_SIZE = 128#256
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_name', type=str, default='base10M+Holmes38k')
+parser.add_argument('--data_name', type=str, default='toy')
 parser.add_argument('--batch_size', type=int, default=100)	
 parser.add_argument('--max_n_trained', type=int, default=int(10e6))
 parser.add_argument('--lr', type=float, default=3e-4)
