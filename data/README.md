@@ -2,6 +2,7 @@
 ## Format
 The model needs base conversational corpus (`base`, e.g. **Reddit**) as well as a stylized corpus (`bias`, e.g. **arXiv**).
 The `base` corpus should be conversational (so `base_conv`), and the `bias` corpus doesn't have to be. so we only need `bias_nonc` (`nonc` means non-conversational)
+
 To sum up, at least these files are required: `base_conv_XXX.num`, `bias_nonc_XXX.num` and `vocab.txt`, where `XXX` is `train`, `vali`, or `test`.
 See more discusion [here](https://github.com/golsun/StyleFusion/issues/3)
 
